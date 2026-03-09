@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사 해산 및 채권 신고 공고</title>
+  <style>
+    :root {
+      --page-width: 720px;
+      --paper-width: 210mm;
+      --paper-min-height: 297mm;
+      --ink: #111;
+      --border: #222;
+      --muted: #444;
+      --bg: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+      color: var(--ink);
+      font-family: "Times New Roman", "Noto Serif KR", "Nanum Myeongjo", serif;
+      line-height: 1.75;
+    }
+
+    body {
+      padding: 32px 16px;
+    }
+
+    .page {
+      width: min(100%, var(--page-width));
+      min-height: var(--paper-min-height);
+      margin: 0 auto;
+      background: var(--bg);
+      border: 1px solid #d8d8d8;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      padding: 64px 56px;
+    }
+
+    h1 {
+      margin: 0 0 40px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 0 18px;
+      font-size: 1rem;
+    }
+
+    .lead {
+      margin-bottom: 28px;
+      text-indent: 1.5em;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      border-top: 1.5px solid var(--border);
+      border-bottom: 1.5px solid var(--border);
+    }
+
+    .info-table th,
+    .info-table td {
+      padding: 12px 8px;
+      vertical-align: top;
+      font-size: 1rem;
+      border-bottom: 1px solid #cfcfcf;
+    }
+
+    .info-table tr:last-child th,
+    .info-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .info-table th {
+      width: 34%;
+      text-align: left;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .contact {
+      margin-top: 8px;
+    }
+
+    .contact p {
+      margin-bottom: 8px;
+    }
+
+    .signature {
+      margin-top: 56px;
+      text-align: right;
+    }
+
+    .footer-date {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    @media print {
+
+      html,
+      body {
+        background: #fff;
+      }
+
+      body {
+        padding: 0;
+      }
+
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <h1>회사 해산 및 채권 신고 공고</h1>
+
+    <p class="lead">
+      당 회사는 2026년 3월 5일 해산을 결의하였으므로, 회사에 대하여 채권을 가진 채권자께서는 본 공고일로부터 2개월 이내에 아래 신고 방법에 따라 채권을 신고하여 주시기 바랍니다. 위 기간 내 신고가
+      없는 경우 청산 절차에서 제외될 수 있음을 공고합니다.
+    </p>
+
+    <table class="info-table" aria-label="회사 해산 공고 정보">
+      <tbody>
+        <tr>
+          <th scope="row">회사명</th>
+          <td>주식회사 버도어</td>
+        </tr>
+        <tr>
+          <th scope="row">해산 결의일</th>
+          <td>2026.03.05</td>
+        </tr>
+        <tr>
+          <th scope="row">청산인</th>
+          <td>한건호</td>
+        </tr>
+        <tr>
+          <th scope="row">채권 신고 기간</th>
+          <td>공고일로부터 2개월</td>
+        </tr>
+        <tr>
+          <th scope="row">채권 신고 방법</th>
+          <td>아래 연락처로 서면 또는 이메일 제출</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section class="contact" aria-labelledby="contact-heading">
+      <p id="contact-heading"><strong>연락처</strong></p>
+      <p><strong>주소</strong> <span class="muted">서울특별시 서초구 서초중앙로 123, 지하 1층 16호</span></p>
+      <p><strong>이메일</strong> <span class="muted">hrg921@gmail.com</span></p>
+    </section>
+
+    <div class="signature">
+      <p>주식회사 버도어</p>
+      <p>청산인 한건호</p>
+    </div>
+
+    <p class="footer-date">공고일: 2026.03.09</p>
+  </main>
+</body>
+
+</html>
